@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplos</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+    </head>
+    <body class="container">
+        
+        <h1 class="text-center">Exemplos</h1>
+
+        <div class="exemplos"></div>
+        
+        <script src="../js/exemplos/PessoaEcma5.js"></script>
+        <script src="../js/exemplos/PessoaEcma6.js"></script>
+        <script>
+            let divExemplos = document.querySelector('.exemplos');
+            var hr = document.createElement('hr');
+            var paragrafoPessoaEcma5 = document.createElement('p');
+            var paragrafoPessoaEcma6 = document.createElement('p');
+
+            let pessoaEcma6 = new PessoaEcma6('Classe Pessoa', 'Criando objeto pessoa com Ecma 6');
+            var pessoaEcma5 = new PessoaEcma5('Classe Pessoa', 'Criando objeto pessoa com Ecma 5');
+
+            paragrafoPessoaEcma5.textContent = 'Nome completo Pessoa com Ecma 5: ' + pessoaEcma5.obterNomeCompleto();
+            divExemplos.appendChild(paragrafoPessoaEcma5);
+
+            divExemplos.appendChild(hr);
+            paragrafoPessoaEcma6.textContent = 'Nome completo Pessoa com Ecma 6: ' + pessoaEcma6.obterNomeCompleto();
+            divExemplos.appendChild(paragrafoPessoaEcma6);
+
+            // divExemplos.appendChild(hr);
+        </script>
+    </body>
+</html>
