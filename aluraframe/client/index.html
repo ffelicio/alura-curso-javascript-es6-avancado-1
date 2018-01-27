@@ -9,7 +9,7 @@
     <body class="container">
         <h1 class="text-center">Negociações</h1>
 
-        <form class="form">
+        <form class="form" onsubmit="negociacaoController.adicionar(event);">
 
             <div class="form-group">
                 <label for="data">Data</label>
@@ -57,10 +57,10 @@
             </tfoot>
         </table>
         <script src="js/app/models/Negociacao.js"></script>
-        <!-- <script src="js/exemplos/escopo-com-var-ecma-5.js"></script> -->
+        <script src="js/app/controllers/NegociacaoController.js"></script>
         <script>
             // Explicação de let no arquivo "var-e-let.js" (diretório "js/exemplos/").
-            let negociacao = new Negociacao(new Date(), 5, 3542);
+            let negociacaoController = new NegociacaoController();
         </script>
     </body>
 </html>
