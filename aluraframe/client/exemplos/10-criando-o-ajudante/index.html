@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Upload de arquivo</title>
+    </head>
+    <body>
+        <label>Informações do arquivo</label>
+        <input class="dados-arquivo" placeholder="formato: nome/tamanho/tipo">
+
+        <button onclick="arquivoController.enviar()"  >Enviar</button>
+
+        <script src="../../js/exemplos/capitulo-4/10-criando-o-ajudante/Arquivo.js"></script>
+        <script src="../../js/exemplos/capitulo-4/10-criando-o-ajudante/ArquivoHelper.js"></script>
+        <script src="../../js/exemplos/capitulo-4/10-criando-o-ajudante/ArquivoController.js"></script>
+        <script>
+            let arquivoController = new ArquivoController();
+        </script>
+    </body>
+</html>
